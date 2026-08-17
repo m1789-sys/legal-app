@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 
 export default function Home() {
   const [showLogin, setShowLogin] = useState(false);
-  const [role, setRole] = useState<'client' | 'lawyer'>('client');
+const [role, setRole] = useState<'client' | 'lawyer' | ''>('');
+  
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
